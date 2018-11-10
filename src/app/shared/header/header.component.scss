@@ -1,0 +1,23 @@
+:host {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+header {
+  width: 600px;
+}
+
+.open-tag:after {
+  content: '\<header\>';
+  font-size: 10px;
+}
+
+.close-tag {
+  font-size: 10px;
+  text-align: right;
+
+  &:after {
+    content: '</header>';
+  }
+}
